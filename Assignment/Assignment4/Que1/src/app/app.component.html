@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Ques1: Demostrating ICC(Inter Component Coummunication )
+  </h1>
+  <h2>
+    Parent to child and child to parent communication
+  </h2>
+</div>
+
+
+<div>
+  <h2>
+    Parent Component
+  </h2>
+  
+  <button (click) = "sendMessageToChild()">
+    Say "Hi" to child
+  </button>
+  <br> <br>
+  Child reply: {{parentRecieveMessage}}
+</div>
+
+<!-- 
+  Send data to child component / creating path from parent to child:  
+      [childRecieveMessage]="parentSendMessage"
+  Send data to parent compoent / creating path from child to parent
+-->
+<app-child 
+  [childRecieveMessage] = "parentSendMessage" 
+  (childSendMessage) = "parentRecieveMessage= $event" 
+>
+</app-child>
+

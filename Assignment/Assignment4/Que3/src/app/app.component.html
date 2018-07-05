@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Book Information (Demostrating service concept)
+  </h1>
+</div>
+
+<div style="text-align:center" >
+  <button (click)= "displaySubcomponent1()">
+      Display all details of books
+  </button> 
+  <button (click)= "displaySubcomponent2()">
+      Display only names of books
+  </button> 
+  <button (click)= "displaySubcomponent3()">
+      Display name and price of books
+  </button> 
+  <app-sub-component1 *ngIf = "flag1" ></app-sub-component1>
+  <app-sub-component2 *ngIf = "flag2" ></app-sub-component2>
+  <app-sub-component3 *ngIf = "flag3" ></app-sub-component3>
+</div>

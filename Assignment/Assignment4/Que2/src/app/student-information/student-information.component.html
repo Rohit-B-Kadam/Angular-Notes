@@ -1,0 +1,33 @@
+<div>
+  <button (click)= "displayInfo()">
+    Get the Student Information
+  </button>
+  <br><br>
+
+  <div *ngIf = "flag">
+    <table border=2>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Class
+        </th>
+        <th>
+          rollno
+        </th>
+      </tr>
+      <tr *ngFor = "let value of students" >
+        <td>
+          {{ value.name }}
+        </td>
+        <td>
+          {{ value.class }}
+        </td>
+        <td>
+          {{ value.rollno }}
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
