@@ -1,0 +1,83 @@
+<div class="container">
+    
+  <div style="padding:2em">
+    <h1>
+      Login Form
+    </h1>
+  </div>
+
+  <form  #LoginForm="ngForm" (ngSubmit)="onSubmit()">
+
+    <!--Name Input -->
+    <div class="form-group">
+      <label for="name">
+        Name:
+      </label>
+      <input  type="text" id="name" class="form-control" placeholder="Enter your Name"
+              required
+              minlength=5
+              [(ngModel)]="model.name" name="name" 
+              #name = "ngModel">
+
+      <!-- Display Warning If Name is Invalid-->
+      <div  class = "alert alert-danger"
+            *ngIf = " name.invalid && ( name.dirty || name.touched ) " >
+          <div *ngIf="name.errors.required">
+              Name is required.
+          </div>
+          <div *ngIf="name.errors.minlength">
+              Name must be at least 4 characters long.
+          </div>
+      </div>
+    </div>
+
+    <!-- College Input-->
+    <div class="form-group">
+      <label for="college">
+        College
+      </label>
+      <input  type="text" id="college" class="form-control" placeholder="Enter Your College Name"
+              required
+              [(ngModel)]="model.college"  name="college"
+              #college = "ngModel" >
+      <div  class="alert alert-danger"
+      *ngIf="college.invalid && ( college.dirty || college.touched) ">
+          College is required.
+      </div>
+    </div>
+    
+    <!-- Password Input-->
+    <div class="form-group">
+      <label for="password">
+        Password
+      </label>
+      <input  type="password" id="password" class="form-control" placeholder="Enter Your Password"
+              required
+              maxlength="7"
+              minlength="4"
+              [(ngModel)]="model.password"  name="password"
+              #password="ngModel">
+      
+      <!-- Display Warning If Password is Invalid-->
+      <div  class = "alert alert-danger"
+            *ngIf = " password.invalid && ( password.dirty || password.touched ) " >
+          <div *ngIf="password.errors.required">
+              Password is required.
+          </div>
+          <div *ngIf="password.errors.minlength">
+              Password must be at least 4 characters long.
+          </div>
+      </div>
+    </div>
+
+    <!-- Submit Button-->
+    <button type="submit" class="form-control btn btn-success"
+            [disabled]="!LoginForm.form.valid"  >
+      Submit
+    </button>
+
+  </form>
+
+
+
+</div>
