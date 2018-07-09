@@ -19,18 +19,22 @@
 
         $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
         $ sudo apt-get install -y nodejs
-	$ sudo apt-get install -y build-essential
+        $ sudo apt-get install -y build-essential
 
 2. Install / Updating npm: (node package manager)
+        
         $ sudo npm install -g npm
 
 3. Install TypeScript
+        
         $ sudo npm install -g typescript
 
 3. Install Angular CLI(Command Line Interface)
+        
         $ sudo npm install -g @angular/cli
 
 4. To Update CLI
+        
         $ sudo npm uninstall -g @angular/cli
         $ sudo npm cache verify
         $ sudo npm install -g @angular/cli@next
