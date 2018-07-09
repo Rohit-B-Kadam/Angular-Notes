@@ -1,8 +1,7 @@
 # Angular
 
 - Angular is a typescript based open-source front-end web application platform led by the Angular team at Google.Angular is technique not the langange.
-- Angular is a platform and framework for building client applications in HTML and TypeScript. Angular is itself written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.
-
+- Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop
 
 ## Augular and AngularJS
 
