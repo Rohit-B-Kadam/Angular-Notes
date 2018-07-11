@@ -1,0 +1,32 @@
+<!--By using class attributes we can use class from css file-->
+
+<h1 class="success">
+Marvellous Infosystems
+</h1>
+
+<h1 class="Failure">
+Pune University
+</h1>
+
+<!--We can also use like property binding for the class-->
+<!-- in .ts file there should be attribute named as MyClass-->
+<h1 [class]="MyClass">
+  Educating for better tomorrow..
+</h1>
+
+
+<!-- We can set class property depending upon the condition-->
+<h1 [class.success]="IsSet">
+  Piyush Khairnar
+</h1>
+
+
+<!-- Change the text color to "green" if isset is true otherwise green -->
+
+<h1 [class.success]="IsSet" [class.failure]="!IsSet" >
+  Rohit Kadam
+</h1> 
+
+<h1 [ngClass]="SetClass" >
+    Rohit Kadam
+</h1> 

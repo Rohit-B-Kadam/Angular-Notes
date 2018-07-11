@@ -36,7 +36,7 @@
 
 Angular is use at client side. To make our webapp more interactive.
 
-![ Diagram shown where the Angular is use](angular_project.jpeg "Angular Project")
+![ Diagram shown where the Angular is use](./Image/angular_project.jpeg "Angular Project")
 
 
 [EXPLORE ANGULAR RESOURCES](https://angular.io/resources)

@@ -1,0 +1,73 @@
+<div *ngIf="!name; else forminfo" class="form-group" style="padding:2em">
+<form [formGroup]="nForm" (ngSubmit)="addPost(nForm.value)">
+      <h1>Marvellous Feedback Form</h1>
+      
+      <div class="form-group">
+        <label> Students Name
+        </label>
+        <input type="text" formControlName="name" class="form-control">
+      
+      </div>
+
+      <div class="form-group">
+      <label> Your Feedback
+      </label>
+      <textarea formControlName="description" cols="20" rows="15" class="form-control"></textarea>
+      </div>
+
+    <div class="form-group">
+      <button class="btn btn-primary form-control"  [disabled]="!nForm.valid" >Submit</button>
+    </div>
+    <h3>Fab Buttons</h3>
+<div class="button-row">
+  <button mat-fab>Basic</button>
+  <button mat-fab color="primary">Primary</button>
+  <button mat-fab color="accent">Accent</button>
+  <button mat-fab color="warn">Warn</button>
+  <button mat-fab disabled>Disabled</button>
+  
+</div>
+
+
+<h3>Basic Buttons</h3>
+<div class="button-row">
+  <button mat-button>Basic</button>
+  <button mat-button color="primary">Primary</button>
+  <button mat-button color="accent">Accent</button>
+  <button mat-button color="warn">Warn</button>
+  <button mat-button disabled>Disabled</button>
+  <a mat-button routerLink=".">Link</a>
+</div>
+
+<h3>Raised Buttons</h3>
+<div class="button-row">
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
+  <a mat-raised-button routerLink=".">Link</a>
+</div>
+
+<h3>Stroked Buttons</h3>
+<div class="button-row">
+  <button mat-stroked-button>Basic</button>
+  <button mat-stroked-button color="primary">Primary</button>
+  <button mat-stroked-button color="accent">Accent</button>
+  <button mat-stroked-button color="warn">Warn</button>
+  <button mat-stroked-button disabled>Disabled</button>
+  <a mat-stroked-button routerLink=".">Link</a>
+</div>
+
+</form>
+</div>
+
+<ng-template #forminfo>
+  <div class="form-container">
+    <div class="row columns">
+      <h1>Marvellous Feedback Report</h1>
+      <h2>{{"Name of Student : "+name}}</h2>
+      <h2>{{"Feedback :" +description}}</h2>
+    </div>
+  </div>
+</ng-template>

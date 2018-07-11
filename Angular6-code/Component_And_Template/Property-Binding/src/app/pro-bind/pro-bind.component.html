@@ -1,0 +1,42 @@
+<div>
+
+  1. Only Textbox<br>
+  <input type="text">
+  <br>
+  <br>
+
+  2. Text box with attribute(value) <br>
+  <input type="text" value="Marvellous">
+  <br>
+  <br>
+
+  3. Hardcoded attribute (id) <br>
+  <input type="text" id = "1" value="Marvellous">
+  <br>
+  <br>
+
+  4. Text box with attribute and property binding <br>
+  <input type="text" [id] = "MarvellousID" value="Marvellous">
+  <br>
+  <br>
+
+  5. Property binding as string interpolation String interpolation only works with string attributes<br>
+  <input type="text" id = "{{MarvellousID}}" value="Marvellous">
+  <br>
+  <br>
+
+  6. Text box with disabled attribute using String Interpolation but it doesn't work disabled = "false" <br>
+  <input type="text" disabled = "false" value="Marvellous">
+  <br>
+  <br>
+
+  7. Text box with disabled attribute with property binding <br>
+  <input type="text" [disabled] = "IsSet" value="Marvellous">
+  <br>
+  <br>
+
+  8. Using bind- tag we can also set the property<br>
+  <input type="text" bind-id = "MarvellousID" value="Marvellous">
+  <br>
+  
+</div>
