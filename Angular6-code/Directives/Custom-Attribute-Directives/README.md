@@ -82,7 +82,7 @@ __Step 2: Then add two eventhandlers that respond when the mouse enters or leave
   }
 
   setcolor(color: string) {
-    this.el.nativeElement.style.background = color;
+    this.el.nativeElement.style.backgroundColor = color;
   }
 
 ```
@@ -159,5 +159,41 @@ Think like this, developer is setting color depending upon the user selection. B
 ---
 
 ## [check all code](./src/app)
+
+---
+
+### nativeElememt function of ElementRef
+
+- To set background color
+
+```css
+  <p style = "background-color: lightblue;" >
+```
+
+```ts
+  this.el.nativeElement.style.backgroundColor = 'red';
+```
+
+- To change color of text.
+
+```css
+  <p style = "color: lightblue;" >
+```
+
+```ts
+  this.el.nativeElement.style.backgroundColor = 'red';
+```
+
+- To bold the text.
+
+```css
+  <p style = "font-weight: bold;" >
+```
+
+```ts
+  this.el.nativeElement.style.fontWeight = 'bold';
+```
+
+we can use all the css property in camalCase style
 
 ---
