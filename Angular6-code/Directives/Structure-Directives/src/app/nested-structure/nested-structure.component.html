@@ -1,0 +1,17 @@
+<h1>*ngIf inside *ngFor</h1>
+
+<h3>Select Development Type </h3>
+<input type="radio" name="select" value="Application"  [(ngModel)]="typeSelected" >Application<br>
+<input type="radio" name="select" value="Web" [(ngModel)]="typeSelected" >Web<br>
+
+
+<h3>Select Language you want to Learn in {{ typeSelected }} development</h3>
+
+<select>
+  <ng-container *ngFor="let language of ProgrammingLanguage">
+    <ng-container *ngIf="language.Development == typeSelected">
+      <option [ngValue]="language.Name">{{ language.Name }}</option>
+    </ng-container>
+  </ng-container> 
+</select>
+

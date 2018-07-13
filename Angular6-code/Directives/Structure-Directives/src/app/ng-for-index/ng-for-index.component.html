@@ -1,0 +1,51 @@
+<h1>Programming Language</h1>
+
+<div *ngFor="let lang of Prog_Lang; let i = index">
+    {{ (i+1) +' '+ lang }}
+</div>
+
+<h3>Displaying by odd index</h3>
+
+<div *ngFor="let lang of Prog_Lang; 
+              let i = index;">
+  
+  <div *ngIf="((i+1) % 2 != 0)">
+    {{ (i+1) +' '+ lang }}
+  </div>
+</div>
+
+<h3> First Language I have Learn :</h3>
+<span *ngFor="let lang of Prog_Lang; 
+              let isFirst = first;">
+  
+  <span *ngIf = "isFirst">
+    {{ lang }}
+  </span>
+</span>
+
+<h3> Latesh Language I have Learn :</h3>
+<span *ngFor="let lang of Prog_Lang; 
+              let isLast = last;">
+  
+  <span *ngIf = "isLast">
+    {{ lang }}
+  </span>
+</span>
+
+<h3>Even Display Langauge:</h3>
+<div *ngFor="let lang of Prog_Lang; 
+              let isEven = even;">
+
+  <div *ngIf = "isEven">
+   {{ lang }}
+  </div>
+</div>
+
+<h3>Odd Display Langauge:</h3>
+<div *ngFor="let lang of Prog_Lang; 
+              let isOdd = odd;">
+
+  <div *ngIf = "isOdd">
+   {{ lang }}
+  </div>
+</div>

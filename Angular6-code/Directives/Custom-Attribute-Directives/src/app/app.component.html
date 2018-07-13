@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Demostration of {{ title }}!
+  </h1>
+
+  <!-- Hardcoded color set by directive ie yellow -->
+  <h2 appHighlight > 
+      Highlight me in yellow
+  </h2>
+
+  <!-- Set color in alias of highlightColor -->
+  <h2 appHighlight="green" > 
+    Highlight me in green
+  </h2>
+
+  <!-- Set color in alias of highlightColor using property binding -->
+  <h2 [appHighlight]="color" > 
+    Highlight me  in orange
+  </h2>
+
+   <!-- Setting default color-->
+   <h2 appHighlight defaultColor="red" > 
+    Highlight me in red
+  </h2>
+
+  <!-- If use not mention color defaultcolor will be add-->
+  <h2 [appHighlight]="color" defaultColor="blue" > 
+    Highlight me in blue
+  </h2>
+  
+
+</div>
+
+<router-outlet></router-outlet>

@@ -8,25 +8,25 @@ Template is a combination of original html with angular directive and binding ma
     - One way. ( view   -> source )
     - Two way. ( view   -> source -> view ).
 3. [Binding types](#Binding-types)
-    - Interpolation.
-    - Property Binding.
+    - [Interpolation](../Angular6-code/Component_And_Template/Interpolation/README.md)
+    - [Property Binding](../Angular6-code/Component_And_Template/Property-Binding/README.md)
         - HTML attribute and DOM properties
-    - Class Binding.
-    - Style Binding.
+    - [Class Binding](../Angular6-code/Component_And_Template/Class-Binding/README.md)
+    - [Style Binding](../Angular6-code/Component_And_Template/Style-Binding/README.md)
     - Attribute Binding.
-    - Event Binding.
-    - Two way Binding.
+    - [Event Binding](../Angular6-code/Component_And_Template/Event-Binding/README.md)
+    - [Two Way Binding](../Angular6-code/Component_And_Template/Two-Way-Binding/README.md)
 4. [Template Expression](../Angular6-code/Component_And_Template/Interpolation/README.md#template-expression)
 5. [Template Statement](../Angular6-code/Component_And_Template/Event-Binding/README.md#template-statement)
 6. Template Reference Variable. ( #var )
-7. Template Input Variable.
-8. Input and Ouput properties.
+7. [Template Input Variable.](../Angular6-code/Directives/Structure-Directives/NgForOf.md#template-input-variable)
+8. [Input and Output properties](./Input_and_Output_Properties.md) (@Input and @Output)
 9. Template Expression operator.
     - The Pipe Operator.  ( | )
     - The safe navigation operator ( ?. )
     - Non-Null sssertion operator ( !. )
     - $any type cast function.
-10. Directive.
+10. [Directives](./Directives.md)
 
 ---
 
@@ -55,6 +55,7 @@ Binding types can be grouped into three categories distinguished by the directio
     - [Property Binding](../Angular6-code/Component_And_Template/Property-Binding/README.md)
     - [Class Binding](../Angular6-code/Component_And_Template/Class-Binding/README.md)
     - [Style Binding](../Angular6-code/Component_And_Template/Style-Binding/README.md)
+    - Attribute Binding
 
 2. View To Source
     - [Event Binding](../Angular6-code/Component_And_Template/Event-Binding/README.md)

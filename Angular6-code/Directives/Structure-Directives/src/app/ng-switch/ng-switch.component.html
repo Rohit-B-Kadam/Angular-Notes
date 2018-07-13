@@ -1,0 +1,29 @@
+<h1>Marvellous InfoSystem</h1>
+
+<div>
+  Select Batch:
+  <select (input)="SelectedBatch = $event.target.value">
+    <option *ngFor="let batch of Batches" [value]=batch> {{batch}} </option>
+  </select>
+</div>
+
+
+<div [ngSwitch]="SelectedBatch">
+  Information: {{SelectedBatch}}
+
+  <div *ngSwitchCase="'Project'">
+      You select Industrial Project Batch batch
+  </div>
+
+  <div *ngSwitchCase="'UNIX'">
+      UNIX internal and LSP
+  </div>
+
+  <div *ngSwitchCase="'Angular'">
+      front-end web development framework
+  </div>
+
+  <div *ngSwitchDefault>
+    Select Batch
+  </div>
+</div>
