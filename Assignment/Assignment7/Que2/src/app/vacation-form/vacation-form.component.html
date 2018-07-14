@@ -1,0 +1,38 @@
+<h1> Get Vacation Trip </h1>
+
+
+<form>
+
+  <mat-form-field>
+    <mat-select placeholder="Select City" [(ngModel)]="selectedCity" name="food">
+      <mat-option *ngFor="let city of cities" [value]="city">
+        {{city}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker1" [min]="minDate" placeholder="Choose a Start date" [(ngModel)]="selectedStartDate" name="StartDate">
+    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+    <mat-datepicker #picker1></mat-datepicker>
+  </mat-form-field>
+  
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker2" [min]="selectedStartDate"  placeholder="Choose a End date" [(ngModel)]="selectedEndDate" name="EndDate">
+    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+    <mat-datepicker #picker2></mat-datepicker>
+  </mat-form-field>
+  
+
+</form>
+
+
+
+<h2>Your Selected Value</h2>
+<div>
+  City = {{ selectedCity }} <br>
+  Start Date = {{ selectedStartDate }} <br>
+  End Date = {{ selectedEndDate }}
+
+</div>

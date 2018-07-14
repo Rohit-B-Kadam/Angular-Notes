@@ -1,0 +1,28 @@
+<div *ngIf="showLoginForm;else DisplayDetail" >
+
+  <form class="example-form" >
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Username" [(ngModel)]="userName" name="Username">
+      <mat-hint>Please enter your name</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input type="password" matInput placeholder="Password" [(ngModel)]="password" name="Password" >
+      <mat-hint>Please enter your password</mat-hint>
+    </mat-form-field>
+
+    <div>
+      <button type="submit" mat-raised-button color="accent" (click)="showDetail()">Submit</button>
+    </div>
+
+  </form>
+
+</div>
+
+<ng-template #DisplayDetail>
+
+  Name = {{ userName }} <br>
+  Password = {{ password }}
+
+</ng-template>

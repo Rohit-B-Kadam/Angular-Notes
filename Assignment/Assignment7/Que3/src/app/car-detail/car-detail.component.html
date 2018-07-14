@@ -1,0 +1,102 @@
+<div *ngIf="!isSubmited; else showDetail">
+
+  <mat-card class="myStyle">
+    <form class="example-form" (ngSubmit)="submitData()" #heroForm="ngForm" >
+      <mat-card-header>
+        <h2>CAR DETAIL</h2>
+      </mat-card-header>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Car Name" [(ngModel)]="car.name" name="carName">
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Company Name" [(ngModel)]="car.company" name="carCompany">
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <p>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Car Type" [(ngModel)]="car.type" name="carType">
+        </mat-form-field>
+      </p>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+
+          <td>
+            <mat-form-field>
+              <input matInput placeholder="Color" [(ngModel)]="car.color" name="carColor">
+            </mat-form-field>
+          </td>
+
+          <td>
+            <mat-form-field>
+              <input matInput placeholder="Car Number" #carNumber="ngModel" [(ngModel)]="car.number" name="carNumber" required>
+              <mat-hint align="end">required</mat-hint>
+              <mat-error *ngIf=" !carNumber.valid">Please Enter Car Number</mat-error>
+            </mat-form-field>
+          </td>
+
+          <td>
+            <mat-form-field>
+              <input matInput type="number" placeholder="No. of seats" min="2" max="15" [(ngModel)]="car.noOfSeats" name="carNoOfSeats">
+            </mat-form-field>
+          </td>
+
+        </tr>
+      </table>
+
+      <p>
+        <button type="submit" mat-raised-button color="primary" [disabled]="!heroForm.form.valid" >
+            <mat-error *ngIf=" !heroForm.form.valid;else showButton ">Please Fill Required Data</mat-error>
+            <ng-template #showButton>Submit</ng-template>
+        </button>
+      </p>
+
+    </form>
+  </mat-card>
+
+</div>
+
+<ng-template #showDetail>
+  <mat-card class ="myStyle">
+    <table>
+      <tr>
+        <td>Name</td>
+        <td>{{ car.name }}</td>
+      </tr>
+
+      <tr>
+        <td>Company</td>
+        <td>{{ car.company }}</td>
+      </tr>
+
+      <tr>
+        <td>Type</td>
+        <td>{{ car.type }}</td>
+      </tr>
+
+      <tr>
+        <td>Color</td>
+        <td>{{ car.color }}</td>
+      </tr>
+
+      <tr>
+        <td>Car Number</td>
+        <td>{{ car.number }}</td>
+      </tr>
+
+      <tr>
+        <td>No. Of Seat</td>
+        <td>{{ car.noOfSeats }}</td>
+      </tr>
+    </table>
+  </mat-card>
+</ng-template>
