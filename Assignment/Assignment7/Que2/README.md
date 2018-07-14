@@ -1,27 +1,6 @@
-# Que2
+# Angular Assignment 7 Que2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0-beta.2.
+## 2. Create angular application which creates one form for the travelling portal. In that portal we have to display names of cities as a list and user will select any specific city.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- We have to accept start date and end date of vacation from user with its necessary details.
+- Use appropriate form components using angular Material Designing.
