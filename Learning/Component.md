@@ -53,6 +53,7 @@ The @Component decorator specifies:
 
 3. A `styles` , define style to our component.
     - Angular uses a concept called “style-encapsulation” which means that styles specified for a particular component only apply to that component.
+    - We can define styles by two way, either by using `styles` or `styleUrls`.
 
 ---
 
