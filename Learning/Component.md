@@ -1,18 +1,17 @@
 # Component
 
-This is the fundamental idea behind components: we will teach the browser new tags that have custom functionality attached to them. like `<login>` tag that shows a login panel.
+Components are the fundamental building block of Angular applications.
 
-- app-root is a component that is defined by our Angular application.
-- __The `<app-root>` tag is where our application will be rendered.__
+- The “application” `<app-root>` itself is just the top-level Component. Then we break our application into smaller child Components.
+- __The `<app-root>` tag in index.html, where our application will be rendered.__
 
 ---
 
-## Contains
+## Table of Contains
 
 1. [Create Component](#create-component)
-2. [Component Decorator](#component-decorator)
-3. [Component Class](#component-class)
-4. [Loading Our Component](#loading-our-component)
+2. [Component Composed Of:](#Each-component-is-composed-of-three-parts)
+3. [Component Decorator](#component-decorator)
 
 ---
 
@@ -33,42 +32,33 @@ This is the fundamental idea behind components: we will teach the browser new ta
 
 ---
 
-## A basic Component has two parts
+## Each component is composed of three parts
 
-1. A Component Decorator.
-2. A component definition class.
-
-### Component Decorator
-
-```ts
-//First way
-    @Component({
-        selector: 'app-hello-world',
-        templateUrl: './hello-world.component.html',
-        styleUrls: ['./hello-world.component.css']
-    })
-
-//Second Way
-    @Component({
-    selector: 'app-hello-world',
-    template:   `
-        <p> hello-world works inline! </p>
-        `,
-    styles: ['font-color:red'];
-    })
-```
-
-- Decorator is indentify by `@`.
-- We can think you __decorators as a metadata to our code.__
-- `selector` we’re defining a new tag which will create instance of our component.
-- We can define templates two ways, either by using the `template` key in our @Component object or by specifying a `templateUrl`.
-- Using backticks (`) for multiline strings makes it easy to put templates inside your code files.
-- Angular uses a concept called “style-encapsulation” which means that styles specified for a particular component only apply to that component.
-- `styles` accept array as it’s argument. This is because we can load multiple stylesheets for a single component.
+- Component Decorator
+- A View
+- A Controller
 
 ---
 
-### Component Class
+### Component Decorator
+
+The @Component is called a decorator. __It adds metadata to the our class__.
+
+The @Component decorator specifies:
+
+1. A `selector` , which tell a name of our component which we will use as a tag in template to initialize our component.
+
+2. A `template` , which defines the view of our component.
+    - We can define templates two ways, either by using the `template` key in our @Component object or by specifying a `templateUrl`.
+
+3. A `styles` , define style to our component.
+    - Angular uses a concept called “style-encapsulation” which means that styles specified for a particular component only apply to that component.
+
+---
+
+### Component Controller
+
+The Component controller is defined by a class.
 
 ```ts
 
