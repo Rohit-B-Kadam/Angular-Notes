@@ -1,17 +1,6 @@
 # Component
 
-Components are the fundamental building block of Angular applications.
-
-- The “application” `<app-root>` itself is just the top-level Component. Then we break our application into smaller child Components.
-- __The `<app-root>` tag in index.html, where our application will be rendered.__
-
----
-
-## Table of Contains
-
-1. [Create Component](#create-component)
-2. [Component Composed Of:](#Each-component-is-composed-of-three-parts)
-3. [Component Decorator](#component-decorator)
+__Components are the fundamental building block of Angular applications.__
 
 ---
 
@@ -34,9 +23,9 @@ Components are the fundamental building block of Angular applications.
 
 ## Each component is composed of three parts
 
-- Component Decorator
-- A View
-- A Controller
+1. [Component Decorator](#component-decorator)
+2. [A Controller](#Component-Controller)
+3. [A View | Template](./Template.md)
 
 ---
 
@@ -46,14 +35,16 @@ The @Component is called a decorator. __It adds metadata to the our class__.
 
 The @Component decorator specifies:
 
-1. A `selector` , which tell a name of our component which we will use as a tag in template to initialize our component.
+1. A __`selector`__ , which tell a name of our component which we will use as a tag in template to initialize our component.
 
-2. A `template` , which defines the view of our component.
+2. A __`template`__ , which defines the view to our component.
     - We can define templates two ways, either by using the `template` key in our @Component object or by specifying a `templateUrl`.
 
-3. A `styles` , define style to our component.
+3. A __`styles`__ , define style to our component.
     - Angular uses a concept called “style-encapsulation” which means that styles specified for a particular component only apply to that component.
     - We can define styles by two way, either by using `styles` or `styleUrls`.
+
+[back](#Each-component-is-composed-of-three-parts)
 
 ---
 
@@ -72,19 +63,22 @@ The Component controller is defined by a class.
         }
 
         ngOnInit() { }
-    }
+
+        public displayInConsole()
+        {
+            console.log("HelloWorld");
+        }
+}
 
 ```
 
-1. `constructor()`: Constructor is a function that is called when we create new instances of this class.
-2. `names` : Property of the component.
-3. `ngOnInit()` helps us to run code when we initialize the component.
+1. `constructor()`: __Constructor__ is a function that is called when we create new instances of this class.
+2. `names` : __Property__ of the component.
+3. `displayInConsole()`: __Method__ of the class
+4. `ngOnInit()`: helps us to run code when we initialize the component.
+
+[back](#Each-component-is-composed-of-three-parts)
 
 ---
 
-## Loading Our Component
-
-- We need to add our component tag to a template that is already being rendered.
-- component tag is defined in `selector` in `@Component`.
-
----
+__[Main Menu](./Angular.md#Angular-Topics)__

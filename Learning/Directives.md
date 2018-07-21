@@ -4,7 +4,7 @@ Directives is consider as a keyword that we can use ib html file which perform p
 
 There are three kinds of directives in Angular.
 
-1. __Components__ - Directive with template.Components are the most common of the three directives
+1. [__Components__](./Component.md) - Directive with template.Components are the most common of the three directives
 
 2. [__Structure Directives__](../Angular6-code/Directives/Structure-Directives/README.md) - Change the DOM layout by adding and removing DOM elements.
 3. [__Attribute Directives__](#Attribute-Directives) - Change the appearance or behavior of an element, component, or another directive.

@@ -2,20 +2,13 @@
 
 Template is a combination of original html with angular directive and binding markup
 
+---
+
+## Some Basic Concept of Template
+
 1. [HTML in template](#html-in-template)
 2. [Data Binding](#data-binding)
-    - One way. ( source -> view )
-    - One way. ( view   -> source )
-    - Two way. ( view   -> source -> view ).
-3. [Binding types](#Binding-types)
-    - [Interpolation](../Angular6-code/Component_And_Template/Interpolation/README.md)
-    - [Property Binding](../Angular6-code/Component_And_Template/Property-Binding/README.md)
-        - HTML attribute and DOM properties
-    - [Class Binding](../Angular6-code/Component_And_Template/Class-Binding/README.md)
-    - [Style Binding](../Angular6-code/Component_And_Template/Style-Binding/README.md)
-    - Attribute Binding.
-    - [Event Binding](../Angular6-code/Component_And_Template/Event-Binding/README.md)
-    - [Two Way Binding](../Angular6-code/Component_And_Template/Two-Way-Binding/README.md)
+3. [__Binding types__](#Binding-types)
 4. [Template Expression](../Angular6-code/Component_And_Template/Interpolation/README.md#template-expression)
 5. [Template Statement](../Angular6-code/Component_And_Template/Event-Binding/README.md#template-statement)
 6. Template Reference Variable. ( #var )
@@ -39,8 +32,6 @@ Template is a combination of original html with angular directive and binding ma
 ---
 
 ## Data Binding
-
-- Push Values to and pull value from HTML.
 
 - **Binding data source(component) and view target(HTML).**
 

@@ -1,6 +1,5 @@
 # Get Started
 
-
 ## Thing Required for Angular
 
 1. Angular Library to create Angular application.
@@ -8,11 +7,10 @@
 1. A transpiler to convert TypeScript to JavaScript.
 1. An IDE to write code, Prefer Visual Studio code.
 1. Any Browser, Highly recommend using the [Google Chrome Web Browser](https://www.google.com/chrome/).  
-  
-  
+
 ## Installation For Angular
 
-1. Installing NodeJS: 
+1. Installing NodeJS:
     [Installation throught package manager](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
      ,
     [Download Node](https://nodejs.org/en/download)

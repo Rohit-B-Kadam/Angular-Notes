@@ -1,26 +1,15 @@
-# Angular
+# README
 
-Contains:
+## This Project Contain
 
-- [Get Started](./Learning/Get_Started.md)
-- [Angular](./Learning/Angular.md)
+- [Get Started With Angular](./Learning/Get_Started.md#Get-Started)
+- [Learn Angular](./Learning/Angular.md#Angular)
 - [Angular CLI](./Learning/AngularCLI.md)
-- [Project Structure of Angular](./Angular6-code/project-structure/README.md)
-- [Component](./Learning/Component.md#component)
-- [Template](./Learning/Template.md)
-- [Directives](./Learning/Directives.md)
-- [Bootstrapping](./Learning/Bootstrapping.md)
-- [Dependence Injection]
-- [Service]
-- [Routing]
-- [Material Design]
-- [BootStrap]
-- [HttpClient]
-- [Forms]
-- [Testing]
-- [NgModule](./Learning/NgModule.md)
+- [Books](./Books/README.md)
+- [ngBooks Project](./ngBook_Project/README.md)
 - [Assignment](./Assignment/README.md)
-- [EXPLORE ANGULAR RESOURCES](https://angular.io/resources)
+- [Project Guide](./Learning/Project_Guide.md)
+- [EXPLORE ANGULAR RESOURCES](https://angular.io/resources) like IDE, Tooling, UI ... etc
 
 ---
 

@@ -9,13 +9,13 @@ The Angular CLI is a command line interface tool that can create a project, add 
 1. **New**
 
 	- Create New Project
-	
+
 			$ ng new Project_Name
 
 	- Create New Project supporting router
 
         	$ ng new Project_Name --routing
-        
+
 2. **Serve** - Easily test your app locally while developing.
 
 	- Simple serve command
@@ -26,15 +26,11 @@ The Angular CLI is a command line interface tool that can create a project, add 
 
         	$ ng serve --open
 
-3. **Generate** - Generate Component , service
+3. **Generate** - Generate [x] =  component , service , pipe , directive , class , interface , module
 
 	- Create a Component
 
-        	$ ng generate component Component_Name
-
-    - Create a Service 
-
-        	$ ng generate service Service_Name
+        	$ ng generate [x] NameX
 
 4. **Test, Lint, Format**
 Make your code really shine. Run your unittests or your end-to-end tests with the breeze of a command. Execute the official Angular linter and run clang format.
