@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ProjectStructure</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <h1>This is index.html</h1>
+  
+  <!-- Default-->
+  <app-root></app-root>
+
+  <!--- <app-root></app-root> 
+    If we commit "app-root"
+    Error: The selector "app-root" did not match any element.
+    So: We have to render "app-root"
+  -->
+
+  <!-- Rendering User Defined Component
+  <app-user-defined></app-user-defined>
+    Error: The selector "app-root" did not match any element.
+  -->
+
+  <!-- If we change top component inside AppModule 
+    Error: The selector "app-user-defined" did not match any elements
+    To remove error:    
+    <app-user-defined></app-user-defined>
+  -->
+
+  <!-- We can render two component inside index.html 
+        But we have to mention in AppModule inside @ngModule in Bootstrap Array  
+        And compalsory we have to render all the component mention in Bootstrap Array in index.html
+  
+    <app-root></app-root>
+    <app-user-defined></app-user-defined>
+  -->
+  </body>
+</html>
