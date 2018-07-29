@@ -6,7 +6,6 @@
 - [Learn Angular](./Learning/Angular.md#Angular)
 - [Angular CLI](./Learning/AngularCLI.md)
 - [Books](./Books/README.md)
-- [ngBooks Project](./ngBook_Project/README.md)
 - [Assignment](./Assignment/README.md)
 - [Project Guide](./Learning/Project_Guide.md)
 - [EXPLORE ANGULAR RESOURCES](https://angular.io/resources) like IDE, Tooling, UI ... etc

@@ -30,7 +30,6 @@ Angular is use to build applications that live on the web, mobile, or the deskto
 
 ## More About Angular
 
-1. [Offical Defination](#Offical-Defination)
 1. [Angular and AngularJS](#Angular-and-AngularJS)
 1. [Versions of Angular](#Versions-of-Angular)
 1. [Feature of Angular](#Feature-of-Angular)
@@ -39,17 +38,11 @@ Angular is use to build applications that live on the web, mobile, or the deskto
 
 ---
 
-## Offical Defination
-
-- Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop.
-
----
-
 ## Angular and AngularJS
 
 - AngularJS is JavaScript Framework developed by Google.
 - Angular is TypeScript based Framework it is also developed by Google.
-- Angular is a AngularJs without Angular.
+- Angular is a AngularJs without JavaScript.
 - Angular is developed by same team how developed AngularJS
 
 ---

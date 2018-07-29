@@ -52,6 +52,6 @@ Binding types can be grouped into three categories distinguished by the directio
     - [Event Binding](../Angular6-code/Component_And_Template/Event-Binding/README.md)
 
 3. View To Source To View
-    - [Two Way Binding](../Angular6-code/Component_And_Template/Two-Way-Binding/README.md)
-
+    - [Two Way Binding](../Angular6-code/Component_And_Template/Two-Way-Binding/README.md) 
+    Its not type of binding.
 ---
