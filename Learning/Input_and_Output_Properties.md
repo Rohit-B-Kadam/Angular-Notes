@@ -39,3 +39,9 @@ Angular requires some other way to identify properties that outside components a
 
 ## Declaring Input and Output properties
 
+---
+
+To type EventEmitter
+
+import { EventEmitter } from 'events';
+import { EventEmitter } from '@angular/core';
