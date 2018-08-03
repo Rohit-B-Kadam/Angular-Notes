@@ -1,0 +1,74 @@
+<div class="container myform-align">
+  
+  <div class="container" style="text-align: center; padding-top:2em">
+    <h2>Admission Form</h2>
+  </div>
+  <br>
+
+  <form> 
+
+    <div class="form-group">
+      <label for="StudName"  >
+        Student Name: 
+      </label>
+      <input [(ngModel)]="model.StudName" type="text" id="StudName" name="StudName" placeholder="Your Name" class="form-control" >
+    </div>
+
+    <div class="form-group">
+      Gender: 
+      <div style="padding-left:6em">
+        <input [(ngModel)]="model.StudGender" type="radio" id="StudGenderMale" name="StudGender"  value="male" > 
+        <label for="StudGenderMale" class="form-check-label , col-md-1" >
+          Male
+        </label>
+        <input [(ngModel)]="model.StudGender" type="radio" id="StudGenderFemale" name="StudGender" value="female" >
+        <label for="StudGenderFemale" class="form-check-label, col-md-1 ">
+          Female
+        </label>
+      </div>
+    </div>
+
+
+
+    <div class="form-group">
+      <label for="StudMobile"  >
+        Mobile: 
+      </label>
+      <input [(ngModel)]="model.StudMobile"  type="text" id="StudMobile"  name="StudMobile"  placeholder="Enter Number"  class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="StudEmail"  >
+        Email: 
+      </label>
+      <input [(ngModel)]="model.StudEmail" type="email" id="StudEmail" name="StudEmail"  placeholder="Enter Email" class="form-control" >
+    </div>
+
+    <div class="form-group">
+      <label for="StudCollege"  >
+        College: 
+      </label>
+      <input  [(ngModel)]="model.StudCollege" type="email" id="StudCollege" name="StudCollege" placeholder="Enter Colege Name" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="StudBatch" >
+        Batch name: 
+      </label>
+      <input [(ngModel)]="model.StudBatch" type="text" id="StudBatch" name="StudBatch"  placeholder="Enter Batch" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="StudAddress"  >
+        Address: 
+      </label>
+      <textarea [(ngModel)]="model.StudAddress" id="StudAddress" name="StudAddress"cols="20" rows="5" placeholder="Enter Address" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary , form-control" (click)="displayInConsole()">
+        Submit
+      </button>
+    </div>
+
+  </form>
+</div>

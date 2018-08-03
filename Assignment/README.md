@@ -30,7 +30,7 @@ have to fetch data from that file. To solve this question please refer HttpDataF
 Create array of books information in service and write one function which returns this
 array. From each separate component display specific information.
 
-### 4. Create angular application which contains three routing navigations as Operating Systems, Programming Languages, Databases.
+### 4. Create angular application which contains three routing navigations as Operating Systems, Programming Languages, Databases
 
 Display specific information when user click any option as
 
@@ -66,13 +66,13 @@ informations. Add names of that components in routes array.
 
 ## Assignment 6
 
-### 1.Create angular application which creates two custom directives as Comp-Success and Comp-Failure.
+### 1.Create angular application which creates two custom directives as Comp-Success and Comp-Failure
 
 - In case of Comp-Success directive when we move the mouse cursor over the data element its text colour becomes green and in case of Comp-Failure text colour becomes red.
 - When we remove mouse courser its colour becomes black.
 - We have to use that both directives in one .html file.
 
-### 2. Create angular application which creates one custom directive named as Custom- Style.
+### 2. Create angular application which creates one custom directive named as Custom- Style
 
 - In this directive we have to set background of our text as yellow and type of the text should be bold.
 - Use that custom directive in .html file.
@@ -82,7 +82,7 @@ informations. Add names of that components in routes array.
 
 ## Assignment 7
 
-### 1.Create angular application which creates login form which accepts Username and Password from user. When user clicks submit button username and password should be stored in typescripts class characteristics.
+### 1.Create angular application which creates login form which accepts Username and Password from user. When user clicks submit button username and password should be stored in typescripts class characteristics
 
 - Use appropriate form components using angular Material Designing.
 
