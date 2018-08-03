@@ -4,6 +4,8 @@ Realtime Global Deployments
 
 You can Deploy static web application. like Angular Project on [zeit/now](https://zeit.co/now)
 
+[demo](https://angular-project-rlsatiqhdw.now.sh/)
+
 ---
 
 ## Setup
