@@ -6,7 +6,7 @@ export const environment = {
   production: false,
 
   firebase: {
-    // something
+    // something more secure
   }
 };
 

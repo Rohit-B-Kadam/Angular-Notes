@@ -1,7 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Avoid environment.ts to upload
-/src/environments/environment.t
+/src/environments/environment.ts
 
 # compiled output
 /dist
