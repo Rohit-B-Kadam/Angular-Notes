@@ -15,7 +15,7 @@
      ,
     [Download Node](https://nodejs.org/en/download)
 
-        $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+        $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
         $ sudo apt-get install -y nodejs
         $ sudo apt-get install -y build-essential
 
@@ -66,6 +66,6 @@
 
         http://localhost:4200
 
-5. Skip 3 and 4 step
+5. Combine command for step 3 and step 4.
 
         $ ng serve --open

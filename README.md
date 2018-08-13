@@ -20,3 +20,12 @@
 - the `ng serve` command live-compiles our .ts to a .js file automatically.
 - Decorator is indentify by `@`.
 - We can think you decorators as a metadata to our code.
+
+- Remember every component you write must be declared in one NgModule before it can be used in a template.
+
+---
+
+## Open Source Project
+
+1. https://www.akveo.com/products.html
+2. https://www.akveo.com/blog/top-7-nicely-looking-free-open-source-angular-projects

@@ -8,6 +8,52 @@ Angular is use to build applications that live on the web, mobile, or the deskto
 
 ## Angular Topics
 
+- [Introduction to Web development]
+- [Web development types and required skillset]
+- [Client Server Architecture in Web Development]
+- [Introduction to Document Object Model]
+- [Use of HTML and CSS to design webpage]
+- [Components of MEAN stack Development]
+- [Introduction to JavaScript]
+- [Introduction to TypeScript]
+- [TypeScript vs JavaScript]
+- [Introduction to Angular Framework]
+- [Installation steps for Angular]
+- [Angular CLI commands]
+- [Use of Visual Studio Code as IDE]
+- [Project structure of Angular]
+- [Creating First Angular Project]
+- [Module in Angular]
+- [Component in Angular]
+- [Binding Concept]
+- [Two Way Binding]
+- [Template Reference Variable]
+- [Inter Component Communication]
+- [Angular Directives]
+- [Routing]
+- [Angular Service]
+- [Angular Dependency]
+- [Angular Observables]
+- [Server communication using HTTP]
+- [Angular Forms]
+- [Angular Forms validation techniques]
+- [Pipe in Angular]
+
+  - [Inbuild Pipe]
+  - [Custom Pipe]
+
+- [Frontend developing using Bootstrap]
+- [Frontend developing using Material Design]
+- [Introduction to cloud]
+- [Angular FireBase]
+- [Introduction to Amazon web services]
+- [Unit Testing of Angular Application]
+- [Introduction To NodeJS]
+- [Client Side Application Development using React]
+- [Webpack]
+
+---
+
 - [More About Angular](./Angular.md#More-About-Angular)
 - [Angular CLI](./AngularCLI.md)
 - [Project Structure of Angular](./Project_Structure.md)
