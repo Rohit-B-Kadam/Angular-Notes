@@ -6,13 +6,50 @@
 </div>
 
 <div>
+  <h1>Display All the Student</h1>
   <ul>
-    <li *ngFor="let item of items | async ">
-      <pre>{{item.MultiOS}}</pre>
+    <li *ngFor="let student of students | async ">
+      <pre>{{student.Name +" "+ student.SurName+" "+student.Age+" "+student.College}}</pre>
     </li>
   </ul>
 </div>
 
+<!-- Display Document -->
+<div>
+  <h2>Display Individual</h2>
+  {{ (student1 | async)?.Name }}
+</div>
 
+
+<!-- Updating Documnent -->
+<div>
+  <h2>Updating Student Detail</h2>
+  Name: 
+  <input type="text"
+          [(ngModel)]="updateStudent.Name" 
+          name="name"
+          >
+  <br>
+  Surname: 
+  <input type="text"
+          [(ngModel)]="updateStudent.SurName" 
+          name="surname"
+          >
+  <br>
+  Age: 
+  <input type="text"
+          [(ngModel)]="updateStudent.Age" 
+          name="age"
+          >
+  <br>
+  College: 
+  <input type="text"
+          [(ngModel)]="updateStudent.College" 
+          name="college"
+          >
+  <br>
+  <button (click)="update()">Update</button>
+
+</div>
 
 <router-outlet></router-outlet>

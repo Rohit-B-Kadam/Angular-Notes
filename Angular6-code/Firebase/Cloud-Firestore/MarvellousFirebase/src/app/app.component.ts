@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { AngularFirestore } from 'angularfire2/firestore';
+import { AngularFirestore, AngularFirestoreDocument, AngularFirestoreCollection } from 'angularfire2/firestore';
+import { Student } from './student';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,32 @@ import { AngularFirestore } from 'angularfire2/firestore';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public items: Observable<any[]>;
-  public fees: Observable<any>;
 
+  public studentCollection: AngularFirestoreCollection<Student>
+  public students: Observable<Student[]>;
+  
+
+  public studentDoc: AngularFirestoreDocument<Student>;
+  public student1: Observable<Student>;
+
+  public updateStudent: Student = new Student("Dhonam","Kadam",2,"Wadia");
 
   constructor( private _db : AngularFirestore) 
   {
-    this.items = _db.collection('Batches').valueChanges();
-    this.fees = _db.doc('Batches/Fees').valueChanges();
+    //Taking whole Collection
+    this.studentCollection = _db.collection<Student>('Student');
+    this.students = this.studentCollection.valueChanges();
+
+    // Taking one whole document
+    this.studentDoc = _db.doc<Student>('Student/Student2');
+    this.student1 = this.studentDoc.valueChanges();
+
+    //Adding New Student in Collection
+    this.studentCollection.add(JSON.parse( JSON.stringify(this.updateStudent)));
+  }
+
+  public update()
+  {
+    this.studentDoc.update(this.updateStudent)
   }
 }

@@ -34,3 +34,7 @@ The Angular CLI is a command line interface tool that can create a project, add 
 
 4. **Test, Lint, Format**
 Make your code really shine. Run your unittests or your end-to-end tests with the breeze of a command. Execute the official Angular linter and run clang format.
+
+5. __model__
+
+		ng generate class foo --type=model

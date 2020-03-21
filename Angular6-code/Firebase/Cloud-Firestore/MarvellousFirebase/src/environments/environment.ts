@@ -6,7 +6,24 @@ export const environment = {
   production: false,
 
   firebase: {
-    // something more secure
+    // Add Firebase config to environments variable
+    /*
+    
+    apiKey: '<your-key>',
+    authDomain: '<your-project-authdomain>',
+    databaseURL: '<your-database-URL>',
+    projectId: '<your-project-id>',
+    storageBucket: '<your-storage-bucket>',
+    messagingSenderId: '<your-messaging-sender-id>'
+    
+    */
+
+    apiKey: "AIzaSyBM01uxOh2bvwNZfshwc1Ip5QEBjWALMxA",
+    authDomain: "marvellousfirebase-606ab.firebaseapp.com",
+    databaseURL: "https://marvellousfirebase-606ab.firebaseio.com",
+    projectId: "marvellousfirebase-606ab",
+    storageBucket: "marvellousfirebase-606ab.appspot.com",
+    messagingSenderId: "232262677424"
   }
 };
 
