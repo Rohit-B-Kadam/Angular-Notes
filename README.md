@@ -27,5 +27,4 @@
 
 ## Open Source Project
 
-1. https://www.akveo.com/products.html
-2. https://www.akveo.com/blog/top-7-nicely-looking-free-open-source-angular-projects
+1. https://www.akveo.com/blog/top-7-nicely-looking-free-open-source-angular-projects
